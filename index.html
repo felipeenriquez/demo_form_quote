@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Quote Form</title>
+  <script>
+    function actualizarChecked(el) {
+      if (el.checked) {
+        el.setAttribute("checked", "");
+      } else {
+        el.removeAttribute("checked");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Quote Form</h2>
+
+  <form id="QuoteFormDemo">
+
+    <!-- Checkbox Part Ok -->
+    <label for="available">Available</label>
+    <input type="checkbox" id="available" name="available" onclick="actualizarChecked(this)">
+    <br><br>
+
+    <!-- Campo Price-->
+    <label for="price">Price:</label>
+    <input type="text" id="price" name="price">
+    <br><br>
+
+    <!-- Selector Quality-->
+    <label>Quality:
+      <select name="opcion" required>
+        <option value="">--Choose--</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+      </select>
+    </label>
+    <br><br>
+
+    <!-- Campo Time Delivery-->  
+    <label for="timedel">Time Delivery:</label>
+    <input type="text" id="timedel" name="timedel">
+    <br><br>
+
+    <!-- Campo Time Year-->  
+    <label for="year">Year:</label>
+    <input type="text" id="year" name="year">
+    <br><br>
+
+    <!-- Campo Time Remark-->  
+    <label for="remark">Remark:</label>
+    <input type="text" id="remark" name="remark">
+
+  </form>
+
+</body>
+</html>
